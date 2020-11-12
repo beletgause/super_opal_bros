@@ -1,0 +1,62 @@
+body.index{
+	background-image: url('../media/bgindex.jpg' ) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-width: 100vw;
+	min-height: 100vh;
+	/*width:1920px;
+	height:1080px;*/
+
+}
+html{
+	font-family: "Montserrat SemiBold", serif;
+}
+body.game{
+	background-color: black;
+}
+#video{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	display: none;
+}
+html { 
+	overflow:  hidden; 
+}
+.panel{
+	width: 500px;
+	margin-left: 60px;
+}
+div.video{
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:1000px;
+	height:516px;
+	display: none;
+}
+/*.content{
+	position: relative;
+	margin: 0 auto;
+	text-align: -webkit-center;
+}*/
+
+.cont_ch{
+	
+	width: 900px;
+}
+
+canvas{
+	display: block;
+}
+
+#user, #block, #title, #pol,#mob{
+	position: absolute;
+	top: 0;
+}
+.text{
+  text-transform:uppercase;
+  font-size:72px;
+  font-family:'Verdana';
+  padding:30px;
+}

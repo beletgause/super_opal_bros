@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Super Opal Bros</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.2.6.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="shortcut icon" href="#"/>
+</head>
+<body class="index">
+<div>
+    <div class="panel ">
+        <font color="white" size="+3">
+            <h2>Super Opal Bros</h2>
+            <ul id="text">
+                <li>Введите ваше имя и нажмите "Начать"</li>
+                <li>Избегайте контакта с пешками</li>
+                <li>Собирайте подсказки, они дают % брутфорса и HP</li>
+                <li>Проберитесь до конца [ДАННЫЕ УДАЛЕНЫ] чтобы победить</li>
+                <li>HP убывает по 1 в секунду</li>
+                <li>Чтобы пропустить видео, просто нажмите пробел</li>
+                <li>Чтобы отключить PRB, дважды нажмите Esc прежде чем нажимать другие клавиши</li>
+            </ul>
+            <select id="hero" style="display: none">
+                <option>Пумба</option>
+                <option>Тимон</option>
+            </select>
+        </font>
+        <input id="login" type="text" oninput="start();" placeholder="Введите ваше имя">
+        <input type="submit" id="start" disabled onclick="go();" value="Начать">
+    </div>
+    <video src="media/2500.mp4" volume=0.2 id="video"></video>
+</div>
+</body>
+</html>
