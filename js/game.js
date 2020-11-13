@@ -11,7 +11,7 @@ var gameWidth = 1850;
 var gameHeight = 895;
 var hero='тимон';
 var fon = new Image();
-fon.src = "media/fon.png";
+fon.src = "media/fonFinal.png";
 var polimg = new Image();
 polimg.src="media/pol.png";
 var blockimg = new Image();
@@ -163,7 +163,7 @@ function update(){
 
 function Fon(){//отрисовка фона
 	ctxmain.clearRect(0,0,gameWidth,gameHeight);
-	ctxmain.drawImage(fon,0,0,1888,1080,0,0,gameWidth,gameHeight);
+	ctxmain.drawImage(fon,0,0,10000,900,0,0,10000,900);
 }
 
 
@@ -262,7 +262,7 @@ Player.prototype.draw = function (){// отрисовка игрока
 			center=true;
 			fonX+=this.speed;
 			ctxmain.clearRect(0,0,gameWidth,gameHeight);
-			ctxmain.drawImage(fon,fonX,0,1888,1080,0,0,gameWidth,gameHeight);
+			ctxmain.drawImage(fon,fonX,0,10000,900,0,0,10000,900);
 			for (var i=0; i < gus.length; i++){
 			ctxUser.clearRect(0,0,gameWidth,gameHeight);
 			ctxUser.drawImage(gusimg, 0,0,1920,580,
@@ -307,7 +307,7 @@ Player.prototype.draw = function (){// отрисовка игрока
 				center=true;
 				fonX-=this.speed;
 				ctxmain.clearRect(0,0,gameWidth,gameHeight);
-				ctxmain.drawImage(fon,fonX,0,1888,1080,0,0,gameWidth,gameHeight);
+				ctxmain.drawImage(fon,fonX,0,10000,900,0,0,10000,900);
 				for (var i=0; i < gus.length; i++){
 				ctxUser.clearRect(0,0,gameWidth,gameHeight);
 				ctxUser.drawImage(gusimg, 0,0,1920,580,
@@ -392,7 +392,7 @@ Player.prototype.draw = function (){// отрисовка игрока
 			center=true;
 			fonX-=this.speed;
 			ctxmain.clearRect(0,0,gameWidth,gameHeight);
-			ctxmain.drawImage(fon,fonX,0,1888,1080,0,0,gameWidth,gameHeight);
+			ctxmain.drawImage(fon,fonX,0,10000,900,0,0,10000,900);
 			for (var i=0; i < gus.length; i++){
 			ctxUser.clearRect(0,0,gameWidth,gameHeight);
 				ctxUser.drawImage(gusimg, 0,0,1920,580,
@@ -438,7 +438,7 @@ Player.prototype.draw = function (){// отрисовка игрока
 			center=true;
 			fonX+=this.speed;
 			ctxmain.clearRect(0,0,gameWidth,gameHeight);
-			ctxmain.drawImage(fon,fonX,0,1888,1080,0,0,gameWidth,gameHeight);
+			ctxmain.drawImage(fon,fonX,0,10000,900,0,0,10000,900);
 			for (var i=0; i < gus.length; i++){
 			ctxUser.clearRect(0,0,gameWidth,gameHeight);
 				ctxUser.drawImage(gusimg, 0,0,1920,580,
